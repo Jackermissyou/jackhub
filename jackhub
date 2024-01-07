@@ -27,7 +27,7 @@ if BF then
 			["Auto Farm Level"] = false,
 		
 			-- Setting etc
-			["Select Weapon"] = "",
+			["Select Weapon"] = "Melee",
 			["Auto Rejoin"] = false,
 		
 			-- Old World
@@ -312,7 +312,7 @@ if BF then
 		ShowName.TextSize = 20.000
 		ShowName.TextXAlignment = Enum.TextXAlignment.Left
 	
-		NameHub.Name = "NameHub"
+		NameHub.Name = "Jack Hub"
 		NameHub.Parent = TopMain
 		NameHub.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 		NameHub.BackgroundTransparency = 1.000
