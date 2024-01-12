@@ -2581,6 +2581,52 @@ local Library = Update:Window("Jack HUB","",Enum.KeyCode.RightControl);
 
 local Main = Library:AddTab("Main","6026568198")
 
+local WeaponList = {"Melee","Sword","Fruit","Gun"}
+_G.SelectWeapon = "Melee"
+Main:AddDropdown("Select Weapon",WeaponList,function(value)
+_G.SelectWeapon = value
+end)
+
+task.spawn(function()
+	while wait() do
+		pcall(function()
+			if _G.SelectWeapon == "Melee" then
+				for i ,v in pairs(game.Players.LocalPlayer.Backpack:GetChildren()) do
+					if v.ToolTip == "Melee" then
+						if game.Players.LocalPlayer.Backpack:FindFirstChild(tostring(v.Name)) then
+							_G.SelectWeapon = v.Name
+						end
+					end
+				end
+			elseif _G.SelectWeapon == "Sword" then
+				for i ,v in pairs(game.Players.LocalPlayer.Backpack:GetChildren()) do
+					if v.ToolTip == "Sword" then
+						if game.Players.LocalPlayer.Backpack:FindFirstChild(tostring(v.Name)) then
+							_G.SelectWeapon = v.Name
+						end
+					end
+				end
+			elseif _G.SelectWeapon == "Gun" then
+				for i ,v in pairs(game.Players.LocalPlayer.Backpack:GetChildren()) do
+					if v.ToolTip == "Gun" then
+						if game.Players.LocalPlayer.Backpack:FindFirstChild(tostring(v.Name)) then
+							_G.SelectWeapon = v.Name
+						end
+					end
+				end
+			elseif _G.SelectWeapon == "Fruit" then
+				for i ,v in pairs(game.Players.LocalPlayer.Backpack:GetChildren()) do
+					if v.ToolTip == "Blox Fruit" then
+						if game.Players.LocalPlayer.Backpack:FindFirstChild(tostring(v.Name)) then
+							_G.SelectWeapon = v.Name
+						end
+					end
+				end
+			end
+		end)
+	end
+end)
+
 Main:AddToggle("Auto Farm Bone",false,function(value)
     _G.Auto_Farm_Bone = value
     StopTween(_G.Auto_Farm_Bone)
@@ -2609,29 +2655,31 @@ spawn(function()
         if _G.Auto_Farm_Bone then
             if game:GetService("Players").LocalPlayer.PlayerGui.Main.Quest.Visible == false then
                 StartMagnetBoneMon = false
-                CheckQuest()
+                CheckLevel()
                 repeat wait() topos(CFrame.new(-9515.01953125, 172.13983154296875, 6078.91455078125)) until (CFrame.new(-9515.01953125, 172.13983154296875, 6078.91455078125).Position - game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.Position).Magnitude <= 3 or not _G.Auto_Farm_Bone
                 if (CFrame.new(-9515.01953125, 172.13983154296875, 6078.91455078125).Position - game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.Position).Magnitude <= 3 then
 					wait(1.2)
-					game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("StartQuest",HauntedQuest2,2)
+					game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("StartQuest","HauntedQuest2",2)
 					wait(0.5)
 				end
             elseif game:GetService("Players").LocalPlayer.PlayerGui.Main.Quest.Visible == true then
-                CheckQuest()
+                CheckLevel()
                 if game:GetService("Workspace").Enemies:FindFirstChild("Reborn Skeleton") or game:GetService("Workspace").Enemies:FindFirstChild("Living Zombie") or game:GetService("Workspace").Enemies:FindFirstChild("Domenic Soul") or game:GetService("Workspace").Enemies:FindFirstChild("Posessed Mummy") then
                     for i,v in pairs(game:GetService("Workspace").Enemies:GetChildren()) do
                         if v.Name == "Reborn Skeleton" or v.Name == "Living Zombie" or v.Name == "Demonic Soul" or v.Name == "Posessed Mummy" then
                             if v.Humanoid.Health > 0 then
                                 repeat wait()
-                                    AutoHaki()
-                                    EquipWeapon(_G.Select_Weapon)
-                                    StartMagnetBoneMon = true
-                                    v.HumanoidRootPart.CanCollide = false
-                                    v.HumanoidRootPart.Size = Vector3.new(60, 60, 60)
-                                    PosMonBone = v.HumanoidRootPart.CFrame
-                                    topos(v.HumanoidRootPart.CFrame * CFrame.new(0,30,0))
-                                    game:GetService'VirtualUser':CaptureController()
-                                    game:GetService'VirtualUser':Button1Down(Vector2.new(1280, 672))
+                                    if string.find(game:GetService("Players").LocalPlayer.PlayerGui.Main.Quest.Container.QuestTitle.Title.Text,"Posessed Mummys") then
+                                        AutoHaki()
+                                        EquipWeapon(_G.SelectWeapon)
+                                        StartMagnetBoneMon = true
+                                        v.HumanoidRootPart.CanCollide = false
+                                        v.HumanoidRootPart.Size = Vector3.new(60, 60, 60)
+                                        PosMonBone = v.HumanoidRootPart.CFrame
+                                        topos(v.HumanoidRootPart.CFrame * CFrame.new(0,30,0))
+                                        game:GetService'VirtualUser':CaptureController()
+                                        game:GetService'VirtualUser':Button1Down(Vector2.new(1280, 672))
+                                    end
                                 until _G.Auto_Farm_Bone == false or not v.Parent or v.Humanoid.Health <= 0
                             end
                         end
