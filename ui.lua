@@ -15,10 +15,10 @@ local OrionLib = {
 	Themes = {
 		Default = {
 			Main = Color3.fromRGB(25, 25, 45),
-			Second = Color3.fromRGB(32, 32, 32),
+			Second = Color3.fromRGB(32, 32, 62),
 			Stroke = Color3.fromRGB(60, 90, 60),
-			Divider = Color3.fromRGB(60, 60, 60),
-			Text = Color3.fromRGB(240, 240, 240),
+			Divider = Color3.fromRGB(80, 60, 60),
+			Text = Color3.fromRGB(240, 25, 240),
 			TextDark = Color3.fromRGB(150, 150, 56)
 		}
 	},
@@ -476,8 +476,8 @@ function OrionLib:MakeWindow(WindowConfig)
 	WindowConfig.IntroText = WindowConfig.IntroText or "Jack Hub"
 	WindowConfig.CloseCallback = WindowConfig.CloseCallback or function() end
 	WindowConfig.ShowIcon = WindowConfig.ShowIcon or false
-	WindowConfig.Icon = WindowConfig.Icon or "rbxassetid://15541504459"
-	WindowConfig.IntroIcon = WindowConfig.IntroIcon or "rbxassetid://15541504459"
+	WindowConfig.Icon = WindowConfig.Icon or "rbxassetid://15935059060"
+	WindowConfig.IntroIcon = WindowConfig.IntroIcon or "rbxassetid://15935059060"
 	OrionLib.Folder = WindowConfig.ConfigFolder
 	OrionLib.SaveCfg = WindowConfig.SaveConfig
 
@@ -503,7 +503,7 @@ function OrionLib:MakeWindow(WindowConfig)
 		Position = UDim2.new(0.5, 0, 0, 0),
 		BackgroundTransparency = 1
 	}), {
-		AddThemeObject(SetProps(MakeElement("Image", "rbxassetid://7072725342"), {
+		AddThemeObject(SetProps(MakeElement("Image", "rbxassetid://15935059060"), {
 			Position = UDim2.new(0, 9, 0, 6),
 			Size = UDim2.new(0, 18, 0, 18)
 		}), "Text")
