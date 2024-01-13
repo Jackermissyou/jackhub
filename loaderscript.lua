@@ -2001,7 +2001,7 @@ spawn(function()
                             if v.Humanoid.Health > 0 then
                                 repeat wait()
                                     AutoHaki()
-                                    EquipWeapon(_G.Select_Weapon)
+                                    EquipWeapon(_G.SelectWeapon)
                                     StartMagnetBoneMon = true
                                     v.HumanoidRootPart.CanCollide = false
                                     v.HumanoidRootPart.Size = Vector3.new(60, 60, 60)
