@@ -2336,12 +2336,33 @@ R:AddToggle({
 ------// Devil Fruit \\-----------------------
 
 DV:AddButton({
-    Name = "Random Fruits",
+    Name = "Random Fruits and bone",
     Callback = function()
         game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("Cousin","Buy")
       end    
 })
-
+DV:AddToggle({
+    Name = "Auto Random Bone",
+    Default = false,
+    Flag = "Auto Random Bone",
+    Save = true,
+    Callback = function(Value)
+        _G.AutoRandomBone = Value
+    end    
+})
+spawn(function()
+    while wait(0.0000000000000000000000000000000000000000000000000001) do
+    if _G.AutoRandomBone then
+    local args = {
+     [1] = "Bones",
+     [2] = "Buy",
+     [3] = 1,
+     [4] = 1
+    }
+    game:GetService("ReplicatedStorage").Remotes.CommF:InvokeServer(unpack(args))
+    end
+    end
+    end)
 DV:AddToggle({
     Name = "Auto Random Fruits",
     Default = false,
