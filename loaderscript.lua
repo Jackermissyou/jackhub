@@ -4138,9 +4138,9 @@ spawn(function()
                         print("Vailon")
                         end
                     end)
-                    v:FindFirstChild("VehicleSeat").CFrame = CFrame.new(-30939.830078125, 3.729933261871338, 9256.4208984375)
+                    v:FindFirstChild("VehicleSeat").CFrame = CFrame.new(-44842.3945, 10.7790766, 16911.3477)
                     wait(1.0)
-                    topos(game:GetService("Workspace").Boats.PirateBrigade.VehicleSeat.CFrame * CFrame.new(0, 3, 0))
+                    Tween(game:GetService("Workspace").Boats.PirateBrigade.VehicleSeat.CFrame * CFrame.new(0, 3, 0))
                 end
             end
         end
