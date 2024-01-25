@@ -1,4 +1,4 @@
-G.Start_Kaitun = true
+_G.Start_Kaitun = true
 _G.Config = true
 _G.Settings = {
     Main = {
