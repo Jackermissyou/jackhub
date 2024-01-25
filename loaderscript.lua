@@ -886,11 +886,11 @@ if game.CoreGui:WaitForChild("RobloxGui"):WaitForChild("Modules"):FindFirstChild
     game.CoreGui:WaitForChild("RobloxGui"):WaitForChild("Modules"):FindFirstChild("Jack Hub Kaitun"):Destroy()
 end
 
-local QuarterlyHubKaitun = Instance.new("ScreenGui")
+local JAckHubKaitun = Instance.new("ScreenGui")
 
-QuarterlyHubKaitun.Name = "JAck Hub Kaitun"
-QuarterlyHubKaitun.Parent = game.CoreGui:WaitForChild("RobloxGui"):WaitForChild("Modules")
-QuarterlyHubKaitun.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+JAckHubKaitun.Name = "JAck Hub Kaitun"
+JAckHubKaitun.Parent = game.CoreGui:WaitForChild("RobloxGui"):WaitForChild("Modules")
+JAckHubKaitun.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
 library = {}
 function library:Createlibrary()
@@ -939,7 +939,7 @@ function library:Createlibrary()
     local MainIsland_2 = Instance.new("TextLabel")
 
     Main.Name = "Main"
-    Main.Parent = QuarterlyHubKaitun
+    Main.Parent = JAckHubKaitun
     Main.AnchorPoint = Vector2.new(0.5, 0.5)
     Main.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
     Main.BorderColor3 = Color3.fromRGB(0, 0, 0)
