@@ -2900,46 +2900,7 @@ task.spawn(function()
 end)
 
 ----------// Shop \\----------------------------------
-SH:AddToggle({
-    Name = "Auto Buy haki",
-    Default = false,
-    Flag = "Auto Buy haki ",
-    Save = true,
-    Callback = function(Value)
-        _G.AutoBuyEnchancementColour = Value
-    end    
-})
-spawn(function()
-    while wait() do
-        if _G.AutoBuyEnchancementColour then
-            local args = {
-                [1] = "ColorsDealer",
-                [2] = "2"
-            }
-            game:GetService("ReplicatedStorage").Remotes.CommF:InvokeServer(unpack(args))
 
-            end
-        end 
-    end)
-
-SH:AddToggle({
-    Name = "Auto Buy legendary sowrd",
-    Default = false,
-    Flag = "Auto Buy legendary sowrd",
-    Save = true,
-    Callback = function(Value)
-        _G.Auto_Buy_Legendary_Sword = Value
-    end    
-})
-while wait() do
-    if _G.Auto_Buy_Legendary_Sword then
-        local args = {
-            [1] = "LegendarySwordDealer",
-            [2] = "2"
-        }
-        game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer(unpack(args))
-    end
-end
 
 local Section = SH:AddSection({
     Name = "Melee"
