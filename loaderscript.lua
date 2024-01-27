@@ -1,6 +1,5 @@
-_G.Team = "Pirates" --// Pirates or Marines
 getgenv().Setting = {
-    -- Start With Team Pirates, Marines
+    ["Team"] = "Marines", -- Start With Team Pirates, Marines
     ["WhiteScreen"] = false, -- White Screen
     ["FpsBoost"] = false, -- Fps Boost
     ["AutoRejoin"] = true, -- AutoRejoin
@@ -81,22 +80,20 @@ repeat wait() until game:GetService("Players").LocalPlayer.Character:FindFirstCh
 if not game:IsLoaded() then repeat game.Loaded:Wait() until game:IsLoaded() end
 --Team
 if game:GetService("Players").LocalPlayer.PlayerGui.Main:FindFirstChild("ChooseTeam") then
-    repeat task.wait()
+    repeat wait()
         if game:GetService("Players").LocalPlayer.PlayerGui:WaitForChild("Main").ChooseTeam.Visible == true then
-            if _G.Team == "Marines" then
-                for i, v in pairs(getconnections(game:GetService("Players").LocalPlayer.PlayerGui.Main.ChooseTeam.Container["Marines"].Frame.TextButton.Activated)) do
-                    for a, b in pairs(getconnections(game:GetService("UserInputService").TouchTapInWorld)) do
-                       b:Fire() 
-                    end
+            if getgenv().Setting.Team == "Pirates" or getgenv().Setting.Team == nil then
+                for i, v in pairs(getconnections(game:GetService("Players").LocalPlayer.PlayerGui.Main.ChooseTeam.Container.Pirates.Frame.ViewportFrame.TextButton.Activated)) do                                                                                                
                     v.Function()
-                end 
+                end
+            elseif getgenv().Setting.Team == "Marines" then
+                for i, v in pairs(getconnections(game:GetService("Players").LocalPlayer.PlayerGui.Main.ChooseTeam.Container.Marines.Frame.ViewportFrame.TextButton.Activated)) do                                                                                                
+                    v.Function()
+                end
             else
-                for i, v in pairs(getconnections(game:GetService("Players").LocalPlayer.PlayerGui.Main.ChooseTeam.Container["Pirates"].Frame.TextButton.Activated)) do
-                    for a, b in pairs(getconnections(game:GetService("UserInputService").TouchTapInWorld)) do
-                       b:Fire() 
-                    end
+                for i, v in pairs(getconnections(game:GetService("Players").LocalPlayer.PlayerGui.Main.ChooseTeam.Container.Pirates.Frame.ViewportFrame.TextButton.Activated)) do                                                                                                
                     v.Function()
-                end 
+                end
             end
         end
     until game.Players.LocalPlayer.Team ~= nil and game:IsLoaded()
@@ -689,7 +686,7 @@ local MainStroke = Instance.new("UIStroke")
 MainStroke.Name = "BtnStroke"
 MainStroke.Parent = on
 MainStroke.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
-MainStroke.Color = Color3.fromRGB(295, 255, 255)
+MainStroke.Color = Color3.fromRGB(25, 255, 255)
 MainStroke.LineJoinMode = Enum.LineJoinMode.Round
 MainStroke.Thickness = 1
 MainStroke.Transparency = 0
