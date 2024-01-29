@@ -49,7 +49,7 @@ getgenv().Setting = {
         ["V"] = {["Enable"] = false, ["HoldTime"] = 0}
     },
     ["Fruit"] = {
-        ["Enable"] = true,
+        ["Enable"] = false,
         ["Delay"] = 2,
         ["Z"] = {["Enable"] = true, ["HoldTime"] = 0},
         ["X"] = {["Enable"] = true, ["HoldTime"] = 0},
@@ -64,9 +64,9 @@ getgenv().Setting = {
         ["X"] = {["Enable"] = true, ["HoldTime"] = 0}
     },
     ["Gun"] = {
-        ["Enable"] = false,
-        ["GunMode"] = false, 
-        ["Delay"] = 1.75,
+        ["Enable"] = true,
+        ["GunMode"] = true, 
+        ["Delay"] = 2,
         ["Z"] = {["Enable"] = true, ["HoldTime"] = 0},
         ["X"] = {["Enable"] = true, ["HoldTime"] = 0}
     }
