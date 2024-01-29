@@ -1383,7 +1383,7 @@ ImageHub.Parent = Top
 
 Ver.Font = Enum.Font.GothamBold
 Ver.Text = "Version: Auto Bounty"
-Ver.TextColor3 = Color3.fromRGB(131.00000739097595, 181.0000044107437, 255)
+Ver.TextColor3 = Color3.fromRGB(255,255,255)
 Ver.TextSize = 17
 Ver.TextTransparency = 0.10000000149011612
 Ver.TextXAlignment = Enum.TextXAlignment.Left
@@ -1398,7 +1398,7 @@ Ver.Parent = Top
 
 NameHub.Font = Enum.Font.GothamBold
 NameHub.Text = "Jack Hub | Blox Fruits"
-NameHub.TextColor3 = Color3.fromRGB(235.00000149011612, 235.00000149011612, 235.00000149011612)
+NameHub.TextColor3 = Color3.fromRGB(355,355,355)
 NameHub.TextSize = 23
 NameHub.TextXAlignment = Enum.TextXAlignment.Left
 NameHub.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
