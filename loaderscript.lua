@@ -6,7 +6,7 @@ getgenv().Setting = {
     },
     ["Webhook"] = {
         ["Enabled"] = true, 
-        ["Url"] = "https://discord.com/api/webhooks/1155320797867561091/98jhEvNhwKwihhk9OUM_k16YkQAPyg83aKapZnozkxyL5dATYtM98Iw_GRuypc3u9zk1"
+        ["Url"] = "https://discord.com/api/webhooks/1201470514674270238/HivlW-kc3LTO3mn-VCglSjPd6CLdTHvngGuDyku5jm9svg4GYzgt0iYnDg22BLQT9Sv_"
     },
     ["Skip"] = {
         ["V4"] = true,
@@ -23,8 +23,8 @@ getgenv().Setting = {
         ["List"] = {""},
     },
     ["Click"] = {
-        ["AlwaysClick"] = false,
-        ["FastClick"] = false
+        ["AlwaysClick"] = true,
+        ["FastClick"] = true,
     },
     ["Another"] = {
         ["V3"] = true,
@@ -58,13 +58,13 @@ getgenv().Setting = {
         ["F"] = {["Enable"] = false, ["HoldTime"] = 0}
     },
     ["Sword"] = {
-        ["Enable"] = true,
+        ["Enable"] = false,
         ["Delay"] = 1,
         ["Z"] = {["Enable"] = true, ["HoldTime"] = 0},
         ["X"] = {["Enable"] = true, ["HoldTime"] = 0}
     },
     ["Gun"] = {
-        ["Enable"] = true,
+        ["Enable"] = false,
         ["GunMode"] = false, 
         ["Delay"] = 1.75,
         ["Z"] = {["Enable"] = true, ["HoldTime"] = 0},
@@ -940,7 +940,7 @@ function wEarn(targ, earn,total)
             ["content"] = "",
             ["embeds"] = {
                 {
-                    ["title"] = "**Rimus Hub | Auto Bounty**",
+                    ["title"] = "**Jack Hub | Auto Bounty**",
                     ["color"] = 00000,
                     ["fields"] = {
                         {
@@ -970,10 +970,10 @@ function wEarn(targ, earn,total)
                         }
                     },
                     ["thumbnail"] = {
-                        ["url"] = "https://cdn.discordapp.com/attachments/1150019850060693574/1172503110506270760/RimusHubTrans.png?ex=65608d9d&is=654e189d&hm=f19d9b3399b42fcb9ca0c6e311f77798db82d09a5fe670abdd7f7d44142d36cc&",
+                        ["url"] = "https://cdn.discordapp.com/attachments/1112214539761614859/1193444436437372998/Untitled352_20240107134133.png?ex=65c86c3e&is=65b5f73e&hm=946e04b64b94a757bddb76b2cc067ecd4a4c4af77a12fcbf26e991f68d22bb37&",
                     },
                     ["footer"] = {
-                        ["text"] = "Rimus Hub - discord.gg/FZzxtjgjte",
+                        ["text"] = "Jack Hub - https://discord.gg/C83Fdy2Svg",
                     },
                     ["timestamp"] = os.date("!%Y-%m-%dT%H:%M:%SZ"),
                 }
@@ -984,7 +984,7 @@ function wEarn(targ, earn,total)
 end
 --- Counter
 --- Load & Save Setting
-local foldername = "Rimus Hub Auto Bounty"
+local foldername = "Jack Hub Auto Bounty"
 local filename = foldername.."/Settings.json"
 function saveSettings()
     local HttpService = game:GetService("HttpService")
@@ -1010,7 +1010,7 @@ function loadSettings()
     end
 end
 --- Gui
-RimusScreen = Instance.new("ScreenGui");
+JackScreen = Instance.new("ScreenGui");
 DropShadowHolder = Instance.new("Frame");
 DropShadow = Instance.new("ImageLabel");
 Main = Instance.new("Frame");
@@ -1049,9 +1049,9 @@ ImageHub = Instance.new("ImageLabel");
 Ver = Instance.new("TextLabel");
 NameHub = Instance.new("TextLabel");
 
-RimusScreen.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
-RimusScreen.Name = "RimusScreen"
-RimusScreen.Parent = game:GetService("CoreGui")
+JackScreen.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+JackScreen.Name = "JackScreen"
+JackScreen.Parent = game:GetService("CoreGui")
 
 DropShadowHolder.AnchorPoint = Vector2.new(0.5, 0.5)
 DropShadowHolder.BackgroundTransparency = 1
@@ -1060,10 +1060,10 @@ DropShadowHolder.Position = UDim2.new(0.5, 0, 0.5, 0)
 DropShadowHolder.Size = UDim2.new(0, 336, 0, 258)
 DropShadowHolder.ZIndex = 0
 DropShadowHolder.Name = "DropShadowHolder"
-DropShadowHolder.Parent = RimusScreen
+DropShadowHolder.Parent = JackScreen
 
 DropShadow.Image = "rbxassetid://6015897843"
-DropShadow.ImageColor3 = Color3.fromRGB(131.00000739097595, 181.0000044107437, 255)
+DropShadow.ImageColor3 = Color3.fromRGB(181.00000739097595, 181.0000044107437, 255)
 DropShadow.ImageTransparency = 0.5
 DropShadow.ScaleType = Enum.ScaleType.Slice
 DropShadow.SliceCenter = Rect.new(49, 49, 450, 450)
@@ -1397,7 +1397,7 @@ Ver.Name = "Ver"
 Ver.Parent = Top
 
 NameHub.Font = Enum.Font.GothamBold
-NameHub.Text = "Rimus Hub | Blox Fruits"
+NameHub.Text = "Jack Hub | Blox Fruits"
 NameHub.TextColor3 = Color3.fromRGB(230.00000149011612, 230.00000149011612, 230.00000149011612)
 NameHub.TextSize = 23
 NameHub.TextXAlignment = Enum.TextXAlignment.Left
