@@ -49,7 +49,7 @@ getgenv().Setting = {
         ["V"] = {["Enable"] = false, ["HoldTime"] = 0}
     },
     ["Fruit"] = {
-        ["Enable"] = false,
+        ["Enable"] = true,
         ["Delay"] = 2,
         ["Z"] = {["Enable"] = true, ["HoldTime"] = 0},
         ["X"] = {["Enable"] = true, ["HoldTime"] = 0},
@@ -58,7 +58,7 @@ getgenv().Setting = {
         ["F"] = {["Enable"] = false, ["HoldTime"] = 0}
     },
     ["Sword"] = {
-        ["Enable"] = false,
+        ["Enable"] = true,
         ["Delay"] = 1,
         ["Z"] = {["Enable"] = true, ["HoldTime"] = 0},
         ["X"] = {["Enable"] = true, ["HoldTime"] = 0}
@@ -71,4 +71,4 @@ getgenv().Setting = {
         ["X"] = {["Enable"] = true, ["HoldTime"] = 0}
     }
 }
-loadstring(game:HttpGet"https://raw.githubusercontent.com/Jackermissyou/jackhub/main/loaderscript.lua")()
+loadstring(game:HttpGet"https://raw.githubusercontent.com/Jackermissyou/jackhub/main/autobounty.lua")()
