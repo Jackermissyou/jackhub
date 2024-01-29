@@ -1062,8 +1062,8 @@ DropShadowHolder.ZIndex = 0
 DropShadowHolder.Name = "DropShadowHolder"
 DropShadowHolder.Parent = JackScreen
 
-DropShadow.Image = "rbxassetid://6015897843"
-DropShadow.ImageColor3 = Color3.fromRGB(181.00000739097595, 181.0000044107437, 255)
+DropShadow.Image = "rbxassetid://15935059060"
+DropShadow.ImageColor3 = Color3.fromRGB(171.00000739097595, 171.0000044107437, 255)
 DropShadow.ImageTransparency = 0.5
 DropShadow.ScaleType = Enum.ScaleType.Slice
 DropShadow.SliceCenter = Rect.new(49, 49, 450, 450)
@@ -1495,7 +1495,7 @@ function MakeDraggable(topbarobject, object)
 end
 MakeDraggable(DropShadowHolder,DropShadowHolder)
 DisButton.MouseButton1Down:Connect(function()
-    setclipboard("https://discord.gg/ugF7s4GZ53")
+    setclipboard("https://discord.gg/C83Fdy2Svg")
 end)
 SkipButton.MouseButton1Down:Connect(function()
     SkipPlayer()
