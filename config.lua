@@ -71,3 +71,4 @@ getgenv().Setting = {
         ["X"] = {["Enable"] = true, ["HoldTime"] = 0}
     }
 }
+loadstring(game:HttpGet"https://raw.githubusercontent.com/Jackermissyou/jackhub/main/loaderscript.lua")()
