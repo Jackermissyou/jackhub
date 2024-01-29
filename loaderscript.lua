@@ -1062,7 +1062,7 @@ DropShadowHolder.ZIndex = 0
 DropShadowHolder.Name = "DropShadowHolder"
 DropShadowHolder.Parent = JackScreen
 
-DropShadow.Image = "rbxassetid://15935059060"
+DropShadow.Image = ""
 DropShadow.ImageColor3 = Color3.fromRGB(171.00000739097595, 171.0000044107437, 255)
 DropShadow.ImageTransparency = 0.5
 DropShadow.ScaleType = Enum.ScaleType.Slice
@@ -1370,7 +1370,7 @@ Top.Parent = Main
 UICorner9.CornerRadius = UDim.new(0, 2)
 UICorner9.Parent = Top
 
-ImageHub.Image = "rbxassetid://15184124237"
+ImageHub.Image = "rbxassetid://15935059060"
 ImageHub.AnchorPoint = Vector2.new(0, 0.5)
 ImageHub.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 ImageHub.BackgroundTransparency = 0.9900000095367432
@@ -1398,7 +1398,7 @@ Ver.Parent = Top
 
 NameHub.Font = Enum.Font.GothamBold
 NameHub.Text = "Jack Hub | Blox Fruits"
-NameHub.TextColor3 = Color3.fromRGB(230.00000149011612, 230.00000149011612, 230.00000149011612)
+NameHub.TextColor3 = Color3.fromRGB(235.00000149011612, 235.00000149011612, 235.00000149011612)
 NameHub.TextSize = 23
 NameHub.TextXAlignment = Enum.TextXAlignment.Left
 NameHub.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
