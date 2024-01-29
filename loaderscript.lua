@@ -1293,7 +1293,7 @@ CurrentBountyNumber.Name = "CurrentBountyNumber"
 CurrentBountyNumber.Parent = CurrentBountyFrame
 
 SkipDisFrame.AnchorPoint = Vector2.new(0.5, 0)
-SkipDisFrame.BackgroundColor3 = Color3.fromRGB(230.00000149011612, 230.00000149011612, 230.00000149011612)
+SkipDisFrame.BackgroundColor3 = Color3.fromRGB(239.00000149011612, 230.00000149011612, 230.00000149011612)
 SkipDisFrame.BackgroundTransparency = 0.8999999761581421
 SkipDisFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
 SkipDisFrame.BorderSizePixel = 0
@@ -1362,7 +1362,7 @@ Top.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 Top.BackgroundTransparency = 0.9900000095367432
 Top.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Top.BorderSizePixel = 0
-Top.Position = UDim2.new(0.500237703, 0, 0.132554695, 0)
+Top.Position = UDim2.new(0.800237703, 0, 0.132554695, 0)
 Top.Size = UDim2.new(0, 335, 0, 68)
 Top.Name = "Top"
 Top.Parent = Main
@@ -1383,7 +1383,7 @@ ImageHub.Parent = Top
 
 Ver.Font = Enum.Font.GothamBold
 Ver.Text = "Version: Auto Bounty"
-Ver.TextColor3 = Color3.fromRGB(131.00000739097595, 181.0000044107437, 255)
+Ver.TextColor3 = Color3.fromRGB(139.00000739097595, 189.0000044107437, 255)
 Ver.TextSize = 17
 Ver.TextTransparency = 0.10000000149011612
 Ver.TextXAlignment = Enum.TextXAlignment.Left
