@@ -19,7 +19,7 @@ getgenv().Setting = {
         }
     },
     ["Chat"] = {
-        ["Enabled"] = false,
+        ["Enabled"] = true,
         ["List"] = {"anh nho be khanh bang qua"},
     },
     ["Click"] = {
