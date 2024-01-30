@@ -32,9 +32,9 @@ _G.Settings = {
     ["Auto Tushita"] = true,
     ["Auto Soul Guitar"] = true
 }
-script_key = "xxxxxxxxxxxxx"
+script_key = "khanhbanglaso1"
 
-if script_key == "key_xx_daily_3" then
+if script_key == "khanhbanglaso1" then
     if _G.KAITAN1CLICK then
         print "bro got secret WL"
         require(game.ReplicatedStorage:WaitForChild("Notification")).new(
