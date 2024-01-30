@@ -38,7 +38,7 @@ if jackhub_key == "khanhbanglaso1" then
     if _G.KAITAN1CLICK then
         print "bro got secret WL"
         require(game.ReplicatedStorage:WaitForChild("Notification")).new(
-            " <Color=Yellow> 🖤 no way Jack Hub Kaitan | Beta is updated 🖤 <Color=/> "
+            " <Color=Blue> 🖤 no way Jack Hub Kaitan | Beta is updated 🖤 <Color=/> "
         ):Display()
         if _G.Settings["Auto Soul Guitar"] then
             _G.Auto_Soul_Guitar = true
