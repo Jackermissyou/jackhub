@@ -1,5 +1,5 @@
 
-repeat task.wait() until game:IsLoaded() --ต้องใส่ตลอดถ้าใช้ synx ไอควายจำใส่สมองเอาไว้
+repeat task.wait() until game:IsLoaded() --ditme syns 
 if not game:IsLoaded() then game.Loaded:Wait() end
 _G.KAITAN1CLICK = true
 _G.Mics = {
