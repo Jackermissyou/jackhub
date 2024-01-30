@@ -1,6 +1,6 @@
 getgenv().Setting = {
     ["Hunt"] = {
-        ["Team"] = "Pirates",
+        ["Team"] = "Pirates",---Marines
         ["Min"] = 0,
         ["Max"] = 30000000,
     },
@@ -24,7 +24,7 @@ getgenv().Setting = {
     },
     ["Click"] = {
         ["AlwaysClick"] = true,
-        ["FastClick"] = true,
+        ["FastClick"] = false,
     },
     ["Another"] = {
         ["V3"] = true,
@@ -49,7 +49,7 @@ getgenv().Setting = {
         ["V"] = {["Enable"] = false, ["HoldTime"] = 0}
     },
     ["Fruit"] = {
-        ["Enable"] = true,
+        ["Enable"] = false,
         ["Delay"] = 2,
         ["Z"] = {["Enable"] = true, ["HoldTime"] = 0},
         ["X"] = {["Enable"] = true, ["HoldTime"] = 0},
