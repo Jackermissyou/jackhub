@@ -6,7 +6,7 @@ getgenv().Setting = {
     },
     ["Webhook"] = {
         ["Enabled"] = true, 
-        ["Url"] = "https://discord.com/api/webhooks/1201470514674270238/HivlW-kc3LTO3mn-VCglSjPd6CLdTHvngGuDyku5jm9svg4GYzgt0iYnDg22BLQT9Sv_"
+        ["Url"] = "webhook is here"
     },
     ["Skip"] = {
         ["V4"] = true,
@@ -59,6 +59,7 @@ getgenv().Setting = {
     },
     ["Sword"] = {
         ["Enable"] = true,
+         ["SwordMode"] = false,
         ["Delay"] = 1,
         ["Z"] = {["Enable"] = true, ["HoldTime"] = 0},
         ["X"] = {["Enable"] = true, ["HoldTime"] = 0}
