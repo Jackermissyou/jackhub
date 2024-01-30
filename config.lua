@@ -31,8 +31,8 @@ getgenv().Setting = {
         ["CustomHealth"] = true,
         ["Health"] = 12000,
         ["V4"] = true,
-        ["LockCamera"] = false,
-        ["FPSBoots"] = false,
+        ["LockCamera"] = true,
+        ["FPSBoots"] = true,
         ["WhiteScreen"] = false,
         ["BypassTp"] = true
     },
