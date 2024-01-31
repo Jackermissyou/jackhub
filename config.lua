@@ -6,7 +6,7 @@ getgenv().Setting = {
     },
     ["Webhook"] = {
         ["Enabled"] = true, 
-        ["Url"] = "webhook is here"
+        ["Url"] = "https://discord.com/api/webhooks/1201470514674270238/HivlW-kc3LTO3mn-VCglSjPd6CLdTHvngGuDyku5jm9svg4GYzgt0iYnDg22BLQT9Sv_"
     },
     ["Skip"] = {
         ["V4"] = true,
@@ -20,14 +20,15 @@ getgenv().Setting = {
     },
     ["Chat"] = {
         ["Enabled"] = true,
-        ["List"] = {"anh nho be khanh bang qua"},
+        ["List"] = {"jack hub on top"},
     },
     ["Click"] = {
         ["AlwaysClick"] = true,
-        ["FastClick"] = false,
+        ["FastClick"] = true,
     },
     ["Another"] = {
         ["V3"] = true,
+        ["Bone"] = true,
         ["CustomHealth"] = true,
         ["Health"] = 12000,
         ["V4"] = true,
@@ -49,7 +50,7 @@ getgenv().Setting = {
         ["V"] = {["Enable"] = false, ["HoldTime"] = 0}
     },
     ["Fruit"] = {
-        ["Enable"] = false,
+        ["Enable"] = true,
         ["Delay"] = 2,
         ["Z"] = {["Enable"] = true, ["HoldTime"] = 0},
         ["X"] = {["Enable"] = true, ["HoldTime"] = 0},
@@ -59,15 +60,15 @@ getgenv().Setting = {
     },
     ["Sword"] = {
         ["Enable"] = true,
-         ["SwordMode"] = false,
+        ["SwordMode"] = true,
         ["Delay"] = 1,
         ["Z"] = {["Enable"] = true, ["HoldTime"] = 0},
         ["X"] = {["Enable"] = true, ["HoldTime"] = 0}
     },
     ["Gun"] = {
         ["Enable"] = true,
-        ["GunMode"] = true, 
-        ["Delay"] = 2,
+        ["GunMode"] = true, --use with mele 
+        ["Delay"] = 1.75,
         ["Z"] = {["Enable"] = true, ["HoldTime"] = 0},
         ["X"] = {["Enable"] = true, ["HoldTime"] = 0}
     }
